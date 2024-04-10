@@ -22,105 +22,6 @@ body, html {
     padding: 20px;
 }
 
-.sidebar {
-    position: fixed;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    z-index: 2; 
-}
-
-.sidebar button {
-    color: white;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-}
-
-.sidebar-links {
-    position: fixed;
-    top: 50%;
-    left: 100%;
-    transform: translateY(-50%, -50%);
-    width: 100%;
-    text-align: center;
-    opacity: 0; 
-    transition: opacity 0.3s, transform 0.3s;
-}
-
-.sidebar-links.show {
-    opacity: 1; 
-}
-
-.sidebar-links.show a {
-    transform: translateX(0); 
-}
-
-.sidebar-links a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 5px 0;
-    transform: translateY(-20px); 
-}
-
-.sidebar-links a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-/*different*/
-.topnav {
-    position: relative;
-    overflow: hidden;
-}
-
-.topnav a {
-    float: left;
-    color: gold;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: black;
-    color: gold;
-  }
-  
-  .topnav-centered a {
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .topnav-right {
-    float: right;
-  }
-
-@media screen and (max-width: 600px) {
-    .topnav a, .topnav-right {
-      float: none;
-      display: block;
-    }
-    
-    .topnav-centered a {
-      position: relative;
-      top: 0;
-      left: 0;
-      transform: none;
-    }
-  }
-
 /*new*/
 .sidenav {
     height: 100%;
@@ -132,10 +33,11 @@ body, html {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    background-color: bisque;
   }
   
   .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 30px;
     text-decoration: none;
     font-size: 25px;
     color: gold;
@@ -159,3 +61,21 @@ body, html {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+  /*table*/
+  table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    background-color: white;
+    width: 50%;
+  
+  }
+  
+  th, td {
+    padding: 15px;
+  }
+
+ 
