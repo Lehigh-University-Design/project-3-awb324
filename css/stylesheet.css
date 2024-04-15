@@ -64,7 +64,7 @@ footer {
 .widget {
   position: relative;
   background-color: black;
-  border: 2px solid white;
+  border: 2px solid gold;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease-in, box-shadow 0.3s ease-in, border-color 0.3s ease-in; /* Add border-color to the transition */
@@ -72,13 +72,14 @@ footer {
 }
 
 .widget:hover {
-  transform: translateY(-5px);
+  transform: translateY(-30px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   border-color: #ff7e5f; 
 }
 
 .footer-text {
   font-family: 'Whisper', sans-serif;
+  font-size: 1em;
 }
 
 .widget-content {
