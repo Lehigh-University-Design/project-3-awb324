@@ -1,81 +1,180 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
 }
 
-#video-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1; 
+.header-title {
+  font-family: 'Bebas Neue', sans-serif; 
+  font-size: 5em; 
+  font-weight: bold; 
+  color: white; 
 }
 
-.content {
-    position: relative;
-    z-index: 1; 
-    text-align: center;
-    color: white; 
-    padding: 20px;
+.subtitle {
+  font-family: 'Jacquard 12 Charted', sans-serif; 
+  font-size: 1.2em; 
+  font-weight: normal; 
+  color: White; 
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/*new*/
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    background-color: bisque;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 30px;
-    text-decoration: none;
-    font-size: 25px;
-    color: gold;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  opacity: 0.7;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  clear: both;
+}
+
+.widget-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 75px;
+  padding: 20px;
+}
+
+.widget {
+  position: relative;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in, box-shadow 0.3s ease-in, border-color 0.3s ease-in; /* Add border-color to the transition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.widget:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-color: #ff7e5f; 
+}
+
+.footer-text {
+  font-family: 'Whisper', sans-serif;
+}
+
+.widget-content {
+  padding: 20px;
+}
+
+.widget h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.widget p {
+  font-size: 1em;
+  font-family: 'Rowdies', cursive;
+}
+
+.widget-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.bio-widget {
+  grid-column-end: span 2;
+  grid-row-end: span 3;
+}
+
+.barcelona-widget {
+  grid-column-end: span 1;
+
+}
+
+.ajax-widget {
+  grid-column-end: span 2;
+}
+
+.diplomats-widget {
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+}
+
+.aztecs-widget {
+  grid-column-end: span 1;
+}
+
+.levante-widget {
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+}
+
+.manager-widget {
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+}
+
+.national-team-widget {
+  grid-column-end: span 1;
+  grid-row-end: span 2;
+}
+
+a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+a::after {
+  content: ""; 
+  display: inline-block; 
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent; 
+  border-right: 5px solid transparent; 
+  border-top: 5px solid #000; 
+  position: absolute; 
+  top: 50%; 
+  right: -10px; 
+  transform: translateY(-50%); 
+}
+
+a:hover {
+  text-decoration: underline; 
+}
+
+.widget-container::before,
+.widget-container::after {
+    content: '"';
+    font-size: 24px;
+    color: #888;
     position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-  /*table*/
-  table, td, th {  
-    border: 1px solid #ddd;
-    text-align: left;
-  }
-  
-  table {
-    border-collapse: collapse;
-    background-color: white;
-    width: 50%;
-  
-  }
-  
-  th, td {
-    padding: 15px;
-  }
+    top: 10px;
+}
 
- 
+.widget-container::before {
+    left: -20px; 
+}
+
+.widget-container::after {
+    right: -20px; 
+}

@@ -3,26 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jacquard+12+Charted&family=Pacifico&family=Tac+One&display=swap" rel="stylesheet">
     <title>Document</title>
-
 </head>
 <body>
-        <video autoplay muted loop id="video-bg">
-            <source src="./videos/1.mp4" type="video/mp4">
-        </video>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="./Ajax.html">Ajax</a>
-            <a href="./Barcelona.html">Barcelona</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+    <header>
+        <div class="header-content">
+            <h1 class="header-title">Johan Cruyff</h1>
+            <p class="subtitle">The Soccer Legend</p>
         </div>
-        <span style="font-size:60px;cursor:pointer;color: gold;" onclick="openNav()">&#9776;</span>
+    </header>
 
-             
+    <main class="widget-container">
+        
+        <section class="widget bio-widget">
+            <a href="./flex.lab.html">
+            <div class="widget-content">
+                <h2>Bio</h2>
+                <img src="../Images/Barca 9.jpg" alt="Johan Cruyff" class="widget-image">
+                <p>Born: April 25, 1947</p>
+                <p>Died: March 24, 2016</p>
+                <p>Nickname: El Flaco (The Skinny One)</p>
+                <p>Position: Forward, Midfielder</p>
+            </div>
+        </a>
+        </section>
 
-    <script src="script.js"></script>
-    
+       
+        <section class="widget barcelona-widget" onclick="window.location.href='barcelona.html'">
+            <div class="widget-content">
+                <h2>FC Barcelona</h2>
+                <img src="../Images/barca tophy 2.jpg" alt="FC Barcelona" class="widget-image">
+                <p>Club Debut: 1973</p>
+                <p>League Titles: 4</p>
+                <p>European Cups: 1</p>
+            </div>
+        </section>
+
+        <section class="widget ajax-widget" onclick="window.location.href='ajax.html'">
+            <div class="widget-content">
+                <h2>Ajax Amsterdam</h2>
+                <img src="../Images/ajax trophy.jpg" alt="Ajax Amsterdam" class="widget-image">
+                <p>Club Debut: 1964</p>
+                <p>League Titles: 8</p>
+                <p>European Cups: 3</p>
+            </div>
+        </section>
+
+        <section class="widget diplomats-widget" onclick="window.location.href='diplomats.html'">
+            <div class="widget-content">
+                <h2>Washington Diplomats</h2>
+                <img src="../Images/Wasginton.jpg" alt="Washington Diplomats" class="widget-image">
+                <p>Club Debut: 1980</p>
+                <p>League Titles: 0</p>
+                <p>Championships: 0</p>
+            </div>
+        </section>
+
+        
+        <section class="widget aztecs-widget" onclick="window.location.href='aztecs.html'">
+            <div class="widget-content">
+                <h2>Los Angeles Aztecs</h2>
+                <img src="../Images/Los angeles.jpg" alt="Los Angeles Aztecs" class="widget-image">
+                <p>Club Debut: 1979</p>
+                <p>League Titles: 0</p>
+                <p>Championships: 1</p>
+            </div>
+        </section>
+
+        <section class="widget levante-widget" onclick="window.location.href='levante.html'">
+            <div class="widget-content">
+                <h2>Levante UD</h2>
+                <img src="../Images/Levante UD.jpg" alt="Levante UD" class="widget-image">
+                <p>Club Debut: 1981</p>
+                <p>League Titles: 0</p>
+                <p>Cup Wins: 0</p>
+            </div>
+        </section>
+
+       
+        <section class="widget manager-widget" onclick="window.location.href='manager.html'">
+            <div class="widget-content">
+                <h2>Managerial Career</h2>
+                <img src="../Images/18655b4ca70f002a535f4900e213e61c.jpg" class="widget-image">
+                <p>FC Barcelona, Ajax Amsterdam, Netherlands National Team</p>
+
+            </div>
+        </section>
+
+       
+        <section class="widget national-team-widget" onclick="window.location.href='national-team.html'">
+            <div class="widget-content">
+                <h2>National Team</h2>
+                <img src="../Images/netherlands.jpg" alt="Netherlands National Team" class="widget-image">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-text">"Playing football is very simple, but playing simple football is the hardest thing there is.”</p>
+    </footer>
 </body>
 </html>
