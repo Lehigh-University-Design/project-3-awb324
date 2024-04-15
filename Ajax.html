@@ -3,33 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/ajax.css">
+    <title>Johan Cruyff - Stats</title>
+    <link rel="stylesheet" href="./css/ajax.css"> 
 </head>
-<body>
-    <div class="topnav">
-        <div class="topnav-centered">
-          <a href="./Project3.html">Home</a>
+<body style="background-color: #D32F2F;"> 
+    <header>
+        <div class="header-content">
+            <h1>Ajax</h1>
         </div>
-        <a href="./Ajax.html" class="active">Ajax</a>
-        <a href="#contact">Barcelona</a>
-        
-        <div class="topnav-right">
-          <a href="#search">Los Angeles Actecs</a>
-          <a href="#about">Washington </a>
-        </div>
-        
-      </div>
+    </header>
 
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="other-page.html">Other Page</a></li>
+           
+        </ul>
+    </nav>
 
-    <img src="./images/ajax.png">
-    <div class="topright">
-        <p>He made his first team debut on 15 November 1964 in the Eredivisie, against GVAV, scoring the only goal for Ajax in a 3-1 defeat.
-        </p>
-    </div>
-    <div class="vl"></div>
+    <main>
+        <section class="content">
+            <div class="left-image">
+                <img src="./images/ajax trophy.jpg" alt="Johan Cruyff">
+            </div>
+            <div class="right-content">
+                <p>Johan Cruyff was a legendary Dutch football player and coach...</p>
+            </div>
+        </section>
 
-    <script src="script.js"></script>
+        <section class="stats-section">
+            <h2>Player Stats</h2>
+            <select id="stats-dropdown" onchange="showStats()">
+                <option value="0">Select a season</option>
+                <option value="1">Season 1</option>
+                <option value="2">Season 2</option>
+         
+            </select>
+            <div id="stats-table">
+               
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <p>&copy; 2024 Johan Cruyff Foundation. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> 
 </body>
 </html>
