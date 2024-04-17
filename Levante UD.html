@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
+    <title>Johan Cruyff - Stats</title>
+    <link rel="stylesheet" href="./css/ajax.css"> 
+</head>
+<body style="background-color: #BD4242;"> 
+    <header>
+        <div class="header-content">
+            <h1>Ajax</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="left-image">
+                <img src="./images/edit 2.jpg" alt="Johan Cruyff">
+            </div>
+            <div class="right-content">
+                <p>With Johan Cruijff Ajax earned their place in football-history. In the early seventies they won three European Cups in a row: 1971, 1972 and 1973. When he returned to Amsterdam in 1981, he amazed the audience again. On December 6th, 1981 he fooled Haarlem-goalie Edward Metgod with a brilliant lob. With Cruijff Ajax won two more national championships.</p>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <h2>Stats</h2>
+            <select id="stats-dropdown" onchange="showStats()">
+                <option value="0">Select a season</option>
+                <option value="1">1964/65</option>
+                <option value="2">1964/66</option>
+                <option value="3">1966/67</option>
+                <option value="4">Season 2</option>
+         
+            </select>
+            <div id="stats-table">
+               
+            </div>
+        </section>
+    </main>
+
+    <footer>
+      <p class="footer-text">"Football is a game of mistakes. Whoever makes the fewest mistakes wins.”</p>
+      <div class="navigation-buttons">
+        <a href="./Project3.html" class="button">Home</a>
+    </div>
+  </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
